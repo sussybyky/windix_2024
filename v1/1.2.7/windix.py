@@ -9,6 +9,7 @@ from func.notizen import *
 from func.on_drag import *
 from func.ver_entschluesseln import *
 from func.russiches_roulette import *
+from func.python_programming_util import *
 
 filename = r"log_in_data.json"
 adfilename = r"log_in_admin.json"
@@ -136,7 +137,7 @@ def logged_in():
     print()
     print("-" * 14)
     print(
-        "s...Settings\nl...Log Out\nh...Help\nw...Write File\nr...Read File\nsh...Shutdown\ndr...Draw\ncal...Calender\ndec...Deciphering\nbr...Browser\nno...Notes\nco...Text Color\nrus...Russian roulette")
+        "s...Settings\nl...Log Out\nh...Help\nw...Write File\nr...Read File\nsh...Shutdown\ndr...Draw\ncal...Calender\ndec...Deciphering\nbr...Browser\nno...Notes\nco...Text Color\nrus...Russian roulette\ncode...Write python code")
     print("-" * 14)
     print()
     com = input(">>> ")
@@ -338,6 +339,10 @@ def logged_in():
         russian_roulette()
         logged_in()
 
+    elif com.lower() == "code":
+        main()
+        logged_in()
+
     else:
         print("Key does not exist!")
         print("Press 'r' to return to menu!")
@@ -353,7 +358,7 @@ def programmer_logged_in():
     print()
     print("-" * 14)
     print(
-        "l...Log Out\nh...Help\nw...Write File\nr...Read File\nsh...Shutdown\ndr...Draw\ncal...Calender\ndec...Decipher\nping...Ping Pong(in developement)\nbr...Browser\nno...Notes\nco...Text Color\nrus...Russian roulette\npdjson...Programmer Data")
+        "l...Log Out\nh...Help\nw...Write File\nr...Read File\nsh...Shutdown\ndr...Draw\ncal...Calender\ndec...Decipher\nping...Ping Pong(in developement)\nbr...Browser\nno...Notes\nco...Text Color\nrus...Russian roulette\ncode...Write python code\npdjson...Programmer Data")
     print("-" * 14)
     print()
     com = input(">>> ")
@@ -520,6 +525,10 @@ def programmer_logged_in():
 
     elif com.lower() == "rus":
         russian_roulette()
+        programmer_logged_in()
+
+    elif com.lower() == "code":
+        main()
         programmer_logged_in()
 
     else:
