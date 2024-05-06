@@ -34,3 +34,7 @@ Eine Funktion zum Schreiben und Ausführen von Python-Code ist verfügbar.
 ### Das Programm hat auch einen speziellen Modus für Programmierer, der zusätzliche Funktionen wie das Anzeigen von Programmiererdaten und das Schreiben von Python-Code bietet.
 
 ### Insgesamt bietet das Programm eine Vielzahl von Funktionen für Benutzer und Programmierer, von grundlegenden Benutzerverwaltungsfunktionen bis hin zu zeichenbasierten und interaktiven Funktionen wie dem Zeichnen und dem Schreiben von Python-Code.
+
+In kooperation mit Levente Racz, Daniel Naderer, Sebastian Miltner, Andreas Klehr, Christian Hahnl
+
+###### Kleinere Codestellen wurden mit ChatGPT und Blackbox AI verbessert und korrigiert
