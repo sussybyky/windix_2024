@@ -1,0 +1,12 @@
+{
+    "admin": {
+        "username": "Admin",
+        "password": "adpass9!"
+    },
+    "file_dat": {
+        "version": "1.2.1",
+        "copyright": "\u00a9Daniel Naderer/Levente Racz 2024",
+        "rights": "Legally supported by \u00a9Windix 2024",
+        "information": "This is a copy of the original file made by the Owner \u00a9Daniel Naderer/Levente Racz! Do not ignore the copyright!"
+    }
+}

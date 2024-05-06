@@ -1,0 +1,12 @@
+{
+    "admin": {
+        "username": "Admin",
+        "password": "adpass9!"
+    },
+    "file_dat": {
+        "version": "Windix 1(2.5)",
+        "copyright": "\u00a9Daniel Naderer/Levente Racz 2024",
+        "rights": "Legally supported by \u00a9Windix 2024",
+        "information": "This is the Original file. Only owned by Daniel Naderer/Levente Racz."
+    }
+}
