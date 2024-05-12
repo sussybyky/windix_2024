@@ -1,3 +1,6 @@
+import json
+
+
 def notizen_app():
     # Laden der vorhandenen Notizen aus der JSON-Datei
     try:

@@ -1,10 +1,18 @@
 import json
+import os
 
 
 def calendar():
-    path = r"F:\Daniel\sonstiges\Anderes\Schule\python\.windix\programm_files\calendar.json"
+    path = r"calendar.json"
     print("Add Event(ae) or read Event(re) or show all Events(sa) or exit(exit)?")
     typ = input(">>> ")
+
+    try:
+        with open(path, "r") as file:
+            load_data = json.load(file)
+    except IOError as e:
+        with open(path, "w") as file:
+            json.dump("", file, indent=4)
 
     if typ.lower() == "ae":
         date = input("Date >>> ")

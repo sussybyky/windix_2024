@@ -65,15 +65,17 @@ def regis():
         },
 
         "file_dat": {
-            "version": "Windix 1(2.7)",
+            "version": "Windix 1(2.8)",
             "copyright": "\u00a9Daniel Naderer/Levente Racz 2024",
             "rights": "Legally supported by \u00a9Windix 2024",
             "information": "This is a copy of the original file made by the Owner \u00a9Daniel Naderer/Levente Racz! Do not ignore the copyright!"
         }
     }
 
+
     with open(filename, "r") as file:
         datas = json.load(file)
+
 
     with open(adfilename, "r") as file:
         datadm = json.load(file)

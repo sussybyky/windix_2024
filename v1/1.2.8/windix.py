@@ -11,6 +11,7 @@ from func.ver_entschluesseln import *
 from func.russiches_roulette import *
 from func.python_programming_util import *
 from func.get_hidden_input import *
+from func.delete_user import *
 
 filename = r"log_in_data.json"
 adfilename = r"log_in_admin.json"
@@ -65,15 +66,17 @@ def regis():
         },
 
         "file_dat": {
-            "version": "Windix 1(2.7)",
+            "version": "Windix 1(2.8)",
             "copyright": "\u00a9Daniel Naderer/Levente Racz 2024",
             "rights": "Legally supported by \u00a9Windix 2024",
             "information": "This is a copy of the original file made by the Owner \u00a9Daniel Naderer/Levente Racz! Do not ignore the copyright!"
         }
     }
 
+
     with open(filename, "r") as file:
         datas = json.load(file)
+
 
     with open(adfilename, "r") as file:
         datadm = json.load(file)
@@ -135,7 +138,7 @@ def logged_in():
     print("Welcome " + us_log)
     print()
     print("-" * 14)
-    print("s...Settings\nl...Log Out\nh...Help\nw...Write File\nr...Read File\nsh...Shutdown\ndr...Draw\ncal...Calender\ndec...Deciphering\nbr...Browser\nno...Notes\nco...Text Color\nrus...Russian roulette\ncode...Write python code")
+    print("s...Settings\nl...Log Out\nh...Help\nw...Write File\nr...Read File\nsh...Shutdown\ndr...Draw\ncal...Calender\ndec...Deciphering\nbr...Browser\nno...Notes\nco...Text Color\nrus...Russian roulette\ndel...Delte this User\ncode...Write python code")
     print("-" * 14)
     print()
     com = input(">>> ")
@@ -287,9 +290,8 @@ def logged_in():
                     print("-" * 14)
 
                     if new_pas == new_pas_check:
-                        login_data_basic["password"] = new_pas
                         with open(filename, "w") as file:
-                            json.dump({"user1": login_data_basic}, file, indent=4)
+                            json.dump({us_log: new_pas}, file, indent=4)
                         print("Password changed!", new_pas)
                         print("-" * 14)
                         break
@@ -305,9 +307,8 @@ def logged_in():
                     print("-" * 14)
 
                     if new_us == new_us_check:
-                        login_data_basic["username"] = new_us
                         with open(filename, "w") as file:
-                            json.dump({"user1": login_data_basic}, file, indent=4)
+                            json.dump({new_us: pas_log}, file, indent=4)
                         print("Username changed!", new_us)
                         print("-" * 14)
                         break
@@ -332,6 +333,10 @@ def logged_in():
     elif com.lower() == "co":
         colortx()
         logged_in()
+
+    elif com.lower() == "del":
+        delete_user()
+        innerPy()
 
     elif com.lower() == "rus":
         russian_roulette()
