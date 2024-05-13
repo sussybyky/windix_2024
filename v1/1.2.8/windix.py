@@ -12,6 +12,7 @@ from func.russiches_roulette import *
 from func.python_programming_util import *
 from func.get_hidden_input import *
 from func.delete_user import *
+from func.calculator import *
 
 filename = r"log_in_data.json"
 adfilename = r"log_in_admin.json"
@@ -138,7 +139,7 @@ def logged_in():
     print("Welcome " + us_log)
     print()
     print("-" * 14)
-    print("s...Settings\nl...Log Out\nh...Help\nw...Write File\nr...Read File\nsh...Shutdown\ndr...Draw\ncal...Calender\ndec...Deciphering\nbr...Browser\nno...Notes\nco...Text Color\nrus...Russian roulette\ndel...Delte this User\ncode...Write python code")
+    print("s...Settings\nl...Log Out\nh...Help\nw...Write File\nr...Read File\nsh...Shutdown\ndr...Draw\ncal...Calender\ndec...Deciphering\nbr...Browser\nno...Notes\nco...Text Color\nrus...Russian roulette\ndel...Delte this User\ncode...Write python code\ncalc...Calculator")
     print("-" * 14)
     print()
     com = input(">>> ")
@@ -342,6 +343,16 @@ def logged_in():
         russian_roulette()
         logged_in()
 
+    elif com.lower() == "calc":
+        while True:
+            try:
+                print("Press CTRl + C to exit.")
+                print(calculate())
+            except KeyboardInterrupt or ValueError:
+                break
+        logged_in()
+
+
     elif com.lower() == "code":
         main()
         logged_in()
@@ -360,7 +371,7 @@ def programmer_logged_in():
     print("Welcome " + us_log)
     print()
     print("-" * 14)
-    print("l...Log Out\nh...Help\nw...Write File\nr...Read File\nsh...Shutdown\ndr...Draw\ncal...Calender\ndec...Decipher\nping...Ping Pong(in developement)\nbr...Browser\nno...Notes\nco...Text Color\nrus...Russian roulette\ncode...Write python code\npdjson...Programmer Data")
+    print("l...Log Out\nh...Help\nw...Write File\nr...Read File\nsh...Shutdown\ndr...Draw\ncal...Calender\ndec...Decipher\nping...Ping Pong(in developement)\nbr...Browser\nno...Notes\nco...Text Color\nrus...Russian roulette\ncode...Write python code\ncalc...Calculator\npdjson...Programmer Data")
     print("-" * 14)
     print()
     com = input(">>> ")
@@ -489,6 +500,16 @@ def programmer_logged_in():
         russian_roulette()
         programmer_logged_in()
 
+    elif com.lower() == "calc":
+        while True:
+            try:
+                print("Press CTRl + C to exit.")
+                print(calculate())
+            except KeyboardInterrupt or ValueError:
+                break
+        programmer_logged_in()
+
+
     elif com.lower() == "code":
         main()
         programmer_logged_in()
@@ -499,7 +520,5 @@ def programmer_logged_in():
         input(">>> ")
         programmer_logged_in()
 
-
-# Run Funktion
 
 innerPy()
