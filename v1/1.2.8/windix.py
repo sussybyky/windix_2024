@@ -405,7 +405,7 @@ def write_file():
     Allows the admin to write to a file.
     """
     print("-" * 14)
-    filedat = r"F:\Daniel\sonstiges\Anderes\Schule\python\.windix\programm_files\write_text.txt"
+    filedat = r"write_text.txt"
 
     with open(filedat, "w") as file:
         while True:
@@ -422,7 +422,7 @@ def read_file():
     Allows the admin to read from a file.
     """
     print("-" * 14)
-    filedat = r"F:\Daniel\sonstiges\Anderes\Schule\python\.windix\programm_files\write_text.txt"
+    filedat = r"write_text.txt"
 
     with open(filedat, "r") as file:
         print(f"Text Written: " + file.read())

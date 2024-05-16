@@ -1,0 +1,12 @@
+{
+    "admin": {
+        "username": "Admin",
+        "password": "adpass001/1.2.8/2024"
+    },
+    "file_dat": {
+        "version": "Windix 1(2.8)",
+        "copyright": "GNU General Public License: https://github.com/sussybyky/windix_2024/blob/master/LICENSE",
+        "rights": "Read the Readme file for further information: https://github.com/sussybyky/windix_2024/blob/master/README.md",
+        "information": "This is a copy of the original file!"
+    }
+}
